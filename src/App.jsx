@@ -6,7 +6,7 @@ import ProjectDetailsPage from "./pages/ProjectDetailsPage";
 import ProjectListPage from "./pages/ProjectListPage";
 import Navbar from "./components/Navbar"; 
 import HomePage from "./pages/HomePage";  
-import EditProjectPage from "./components/EditProjectPage"
+import EditProjectPage from "./pages/EditProjectPage"
 
 function App() {
   return (
