@@ -47,6 +47,10 @@ textarea {
   font-weight: 600;
 }
 
+li {
+  list-style: none;
+}
+
 .card {
   width: 400px;
   padding: 10px;

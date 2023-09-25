@@ -1,22 +1,26 @@
 // src/App.jsx
 
 import "./App.css";
-import { Routes, Route } from "react-router-dom"; // <== IMPORT
-
-import Navbar from "./components/Navbar";     // <== IMPORT
-import HomePage from "./pages/HomePage";     // <== IMPORT
+import { Routes, Route } from "react-router-dom"; 
+import ProjectDetailsPage from "./pages/ProjectDetailsPage";
+import ProjectListPage from "./pages/ProjectListPage";
+import Navbar from "./components/Navbar"; 
+import HomePage from "./pages/HomePage";  
+import EditProjectPage from "./components/EditProjectPage"
 
 function App() {
   return (
     <div className="App">
-      
-     {/* Below: ADD <Navbar>, <Routes> & <Route> */}
       <Navbar />
-
-      <Routes>      
-        <Route path="/" element={ <HomePage /> } />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/projects" element={<ProjectListPage />} />
+        <Route path="/projects/:projectId" element={<ProjectDetailsPage />} />
+        <Route
+          path="/projects/edit/:projectId"
+          element={<EditProjectPage />}
+        />
       </Routes>
-      
     </div>
   );
 }
