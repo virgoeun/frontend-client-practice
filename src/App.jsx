@@ -1,12 +1,12 @@
 // src/App.jsx
 
 import "./App.css";
-import { Routes, Route } from "react-router-dom"; 
+import { Routes, Route } from "react-router-dom";
 import ProjectDetailsPage from "./pages/ProjectDetailsPage";
 import ProjectListPage from "./pages/ProjectListPage";
-import Navbar from "./components/Navbar"; 
-import HomePage from "./pages/HomePage";  
-import EditProjectPage from "./pages/EditProjectPage"
+import Navbar from "./components/Navbar";
+import HomePage from "./pages/HomePage";
+import EditProjectPage from "./pages/EditProjectPage";
 
 function App() {
   return (
@@ -16,10 +16,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<ProjectListPage />} />
         <Route path="/projects/:projectId" element={<ProjectDetailsPage />} />
-        <Route
-          path="/projects/edit/:projectId"
-          element={<EditProjectPage />}
-        />
+        <Route path="/projects/edit/:projectId" element={<EditProjectPage />} />
       </Routes>
     </div>
   );

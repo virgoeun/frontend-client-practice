@@ -34,6 +34,7 @@ export default function ProjectDetailsPage(props) {
       )}
 
       <AddTask refreshProject={getProject} projectId={projectId} />
+    {/* just single project refresh ! (since inner task was added(updated)) */}
 
       {project &&
         project.tasks.map((task) => <TaskCard key={task._id} {...task} />)}

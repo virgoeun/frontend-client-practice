@@ -18,7 +18,7 @@ function AddProject({refreshProjects}) {
         // Reset the state
         setTitle("");
         setDescription("");
-        refreshProjects(); 
+        refreshProjects(); // updated project list with new one!
       })
       .catch((error) => console.log(error));
   };
